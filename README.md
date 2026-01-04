@@ -1,16 +1,67 @@
-# React + Vite
+## HeroApp – Modern App Store Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ ## Description
 
-Currently, two official plugins are available:
+ HeroApp is a responsive modern app store platform built using React.
+The application allows users to explore apps, view app details, install and uninstall apps using localStorage, and manage their installed applications.
+It provides a smooth user experience with live search, loading animations, interactive charts, and toast notifications.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React JS
+Used to build a fast, component-based user interface with reusable UI components.
 
-## React Compiler
+React Router DOM
+Handles client-side routing and navigation between pages without reloading the browser.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Tailwind CSS
+Utility-first CSS framework used to design responsive and modern UI quickly.
 
-## Expanding the ESLint configuration
+Recharts
+Used to create responsive and interactive charts for visualizing app review data.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+React Hot Toast
+Displays lightweight and customizable toast notifications for user actions like install/uninstall.
+
+LocalStorage API
+Stores installed app data in the browser so the data persists after page reload.
+
+JavaScript (ES6+)
+Provides modern JavaScript features such as arrow functions, destructuring, and modules.
+
+Vite
+A fast build tool and development server that improves performance and developer experience.
+
+
+# Layout & Data Design 
+
+ * Header
+Logo navigates to Home Page
+Navigation links:
+Home
+Apps
+Installation
+Active route indication
+Contribution button linking to GitHub profile
+🔹 Footer
+Custom designed footer with creative layout and styling
+🔹 Data
+App data stored as a JSON array (12–20 objects)
+Each app object follows this structure:
+
+{
+  image: string,
+  title: string,
+  companyName: string,
+  id: number,
+  description: string,
+  size: number,
+  reviews: number,
+  ratingAvg: number,
+  downloads: number,
+  ratings: [
+    { name: "1 star", count: number },
+    { name: "2 star", count: number },
+    { name: "3 star", count: number },
+    { name: "4 star", count: number },
+    { name: "5 star", count: number }
+  ]
+}
