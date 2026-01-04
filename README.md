@@ -1,5 +1,5 @@
 ## 🚀 HeroApp – Modern App Store Platform
-##📖 Description
+## 📖 Description
 
 HeroApp is a responsive, modern app store platform built using React.
 The application allows users to explore apps, view detailed app information, install and uninstall apps using localStorage, and manage their installed applications efficiently.
@@ -40,7 +40,7 @@ Provides modern JavaScript features such as arrow functions, destructuring, and 
 A fast build tool and development server that improves performance and developer experience.
 
 ## 🧩 Layout & Data Design
-###🔹 Header
+### 🔹 Header
 
 Logo navigates to Home Page
 
@@ -56,7 +56,7 @@ Active route indication
 
 Contribution button linking to GitHub profile
 
-###🔹 Footer
+### 🔹 Footer
 
 Custom-designed footer
 
@@ -68,6 +68,7 @@ App data stored as a JSON array (12–20 objects)
 
 Each app object follows this structure:
 
+```js
 {
   "image": "string",
   "title": "string",
@@ -86,3 +87,4 @@ Each app object follows this structure:
     { "name": "5 star", "count": "number" }
   ]
 }
+```
